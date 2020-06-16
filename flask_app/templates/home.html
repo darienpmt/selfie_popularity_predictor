@@ -1,0 +1,45 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul class="flash">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+<p align="center">Upload an image and see if it will be popular on Instagram!</p>
+
+<div align="center">
+    <h1 style="font-size:1.2vw">
+      <p style="color:#515BD4";>The app predicts popularity with an accuracy of 70%</p>
+    </h1>
+</div> 
+
+<div>
+    <form align="center" action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" id="image">
+        <input type="submit" value="Submit">
+    </form>
+</div> 
+<div>
+.
+</div>
+<div align="center">
+    <img src='/static/insta_heart.jpeg' width="270 px">
+</div>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+

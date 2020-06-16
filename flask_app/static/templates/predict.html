@@ -1,0 +1,20 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+<p>What is the probability that your image will be popular on Instagram?!</p>
+
+<img src="{{image_url}}" alt="Input image">
+
+{{ plot_div|safe }}
+
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-2.0.1.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.1.min.js"></script>
+{{ plot_script|safe }}
+<p>Shown below are the emotions you are conveying in your photo, along with their corresponding prevelance.
+    Popular images tend to be happy, or otherwise show strong emotions. </p>
+
+{% if message %}
+  <h2>{{message}}</h2>
+  {% endif %}
+
+{% endblock %}

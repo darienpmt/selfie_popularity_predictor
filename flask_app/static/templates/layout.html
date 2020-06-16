@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/app.css')}}">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-2.0.1.min.css" rel="stylesheet">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.1.min.css" rel="stylesheet">
+    <title>Popularity Predictor! | Upload an Image</title>
+</head>
+<body>
+    <h1><a href='/'>Popularity Predictor!</a></h1>
+    {% block body %}{% endblock %}
+</body>
+</html>
