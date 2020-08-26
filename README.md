@@ -8,7 +8,8 @@ for our attention, and this application offers a fun game users could play as th
 
 # Data
 The [data](https://www.crcv.ucf.edu/data/Selfie/) was collected from a study conducted at the University of Central Florida. 
-It contains over 46,000 selfies from Instagram, each containing several interesting labels. I used the provided 'log2 normalized popularity score' to determine if a photo was popular or not. Unfortunately I don't know how this score was determined, but I imagine it is related to the number of likes each photo received, normalized over the number of followers they have. Photos which scored in the top 50% were considered to be popular. 
+It contains over 46,000 selfies from Instagram, each containing several interesting labels. I used the provided log2 normalized popularity score to determine if a photo was popular or not. This was done because users with more followers will typically receive more likes/views, allowing the study to look at a photo's
+popularity more objectively. Photos which scored in the top 50% were considered to be popular. 
 
 ## Image Prep
 Each image was 306 by 306 pixels. To improve model performance, I resized them to be 128 by 128.
